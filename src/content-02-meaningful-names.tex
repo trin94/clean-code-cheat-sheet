@@ -1,0 +1,65 @@
+%! Author = elias
+%! Date = 15.10.20
+
+\section*{Meaningful Names}
+\begin{itemize}
+    \item Use intention-revealing names
+    \begin{itemize}
+        \item The name should answer why it exists, what it does and how it is used
+    \end{itemize}
+    \item Avoid disinformation
+    \begin{itemize}
+        \item Refrain from encoding the (container) type into the name
+        \item Similar spelling means similar information
+    \end{itemize}
+    \item Avoid noise words
+    \begin{itemize}
+        \item \textbf{If} they have no meaning: \textit{a}, \textit{an} or \textit{the}
+        \item \textbf{In general:} \textit{Manager}, \textit{Processor}, \textit{Data} or \textit{Info} in class names
+        \item \textit{Variable} in a variable name
+        \item \textit{Table} in a table name
+    \end{itemize}
+    \item Use distinguishable names
+    \begin{itemize}
+        \item \st{\textit{nameStr}} $\rightarrow$ \textit{name}
+        \item \st{\textit{moneyAmount}} $\rightarrow$ \textit{money}
+        \item \st{\textit{accountData}} $\rightarrow$ \textit{account}
+        \item \st{\textit{customerInfo}} $\rightarrow$ \textit{customer}
+        \item \st{\textit{theMessage}} $\rightarrow$ \textit{message}
+    \end{itemize}
+    \item Use pronounceable names
+    \begin{itemize}
+        \item \st{\textit{genymdhms}} $\rightarrow$ \textit{generationTimestamp}
+    \end{itemize}
+    \item Avoid prefixing interfaces with the letter \textit{I}
+    \begin{itemize}
+        \item Distraction at beast
+        \item Too much information at worst
+    \end{itemize}
+    \item Avoid mental mapping
+    \begin{itemize}
+        \item Readers shouldn't mentally translate names into other names
+        \item Clarity is king
+    \end{itemize}
+    \item Use words that are easy to understand
+    \begin{itemize}
+        \item \st{\textit{whack}} $\rightarrow$ \textit{kill}
+        \item \st{\textit{eatMyShorts}} $\rightarrow$ \textit{abort}
+    \end{itemize}
+    \item Pick one word per concept
+    \begin{itemize}
+        \item Use different names for different semantics
+        \item Methods that are named equally across classes should have the same method signature, too
+    \end{itemize}
+    \item Make use of knowledge
+    \begin{itemize}
+        \item Use computer science terms
+        \item Use problem domain names
+    \end{itemize}
+    \item Keep an eye on context
+    \begin{itemize}
+        \item Enclose meaningless variables in meaningful namespaces (last resort: prefixing)
+        \item Class names shouldn't carry their surrounding context
+    \end{itemize}
+    \item \textbf{General rule:} Clarity $>$ short names $>$ long names
+\end{itemize}
