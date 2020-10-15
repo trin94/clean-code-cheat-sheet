@@ -1,0 +1,7 @@
+compile_pdf:
+  image: aergus/latex
+  script:
+    - chmod +x ./build.sh && ./build.sh
+  artifacts:
+    paths:
+      - main.pdf
