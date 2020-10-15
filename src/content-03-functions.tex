@@ -1,0 +1,90 @@
+%! Author = elias
+%! Date = 15.10.20
+
+\section*{Functions}
+\begin{itemize}
+    \item Make functions small
+    \begin{itemize}
+        \item They should hardly ever be 20 lines long
+    \end{itemize}
+    \item Use descriptive names
+    \begin{itemize}
+        \item The smaller and focused a function is, the easier it is to choose a descriptive name
+        \item Long descriptive name $>$ long descriptive comment
+    \end{itemize}
+    \item Check blocks and indenting
+    \begin{itemize}
+        \item Bodies of \textit{if}, \textit{else} and \textit{while} should be one line long:
+        function call with a nicely descriptive name
+        \item Indent level should not be greater than one or two
+    \end{itemize}
+    \item Do one thing
+    \begin{itemize}
+        \item \texttt{Functions should do one thing.}
+        \item [] \texttt{They should do it well.}
+        \item [] \texttt{They should do it only.}
+        \item If the function does only those steps that are one level below the stated name of the function,
+        then the function is doing one thing
+        \item Functions should either do something or answer something, but not both
+    \end{itemize}
+    \item Implement one level of abstraction per function
+    \begin{itemize}
+        \item Helps to differentiate better between concept and detail
+    \end{itemize}
+    \item Follow the Stepdown Rule
+    \begin{itemize}
+        \item Should read like a newspaper
+        \item High level functions at the top, details at the bottom
+    \end{itemize}
+    \item Use switch statements and if/else chains rarely
+    \begin{itemize}
+        \item They do more than one thing by nature
+        \item There aren't many reasons to use switch statements in high level classes
+        \item Often a sign of missed polymorphism
+    \end{itemize}
+    \newpage
+    \item Be careful with function arguments
+    \begin{itemize}
+        \item $0$ arguments (niladic) $>1$ argument (monadic) $>2$ arguments (dyadic) $>3$ arguments (triadic)
+        \item Never use more than $3$ arguments (polyadic)
+        \item Less arguments means easier testing and better readability
+    \end{itemize}
+    \item Avoid output arguments
+    \begin{itemize}
+        \item Interrupts the reading flow
+        \item \textit{StringBuilder transform(StringBuilder in)} $>$ \textit{void transform(StringBuilder out)}
+    \end{itemize}
+    \item Avoid flag arguments
+    \begin{itemize}
+        \item Clear sign of a function that does more than one thing
+    \end{itemize}
+    \item Dyadic functions
+    \begin{itemize}
+        \item Perfectly reasonable if arguments have a natural cohesion or a natural ordering
+    \end{itemize}
+    \item Triadic functions
+    \begin{itemize}
+        \item Difficult to read but sometimes required
+        \item Maybe better to wrap arguments into an \textit{Argument Object}
+    \end{itemize}
+    \item Variable arguments
+    \begin{itemize}
+        \item If variable arguments are treated identically, they are equivalent to a single argument
+    \end{itemize}
+    \item Avoid side effects
+    \begin{itemize}
+        \item Clear sign that the function does more than one thing
+        \item Function does \textit{hidden} things
+    \end{itemize}
+    \item Do not follow the "One entry, one exit" rule
+    \begin{itemize}
+        \item Only beneficial in large functions, which we want to avoid
+        \item Having multiple \textit{return}, \textit{break} or \textit{continue} statements may be more expressive
+    \end{itemize}
+    \item Avoid duplicate code
+\end{itemize}
+\begin{quote}
+    "Master programmers thing of systems as stories to be told rather than programs to be written.
+    They use the facilities of their chosen programming language to construct a much richer and more expressive language
+    that can be used to tell that story."
+\end{quote}
