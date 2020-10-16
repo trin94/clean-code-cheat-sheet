@@ -1,0 +1,42 @@
+%! Author = elias
+%! Date = 15.10.20
+
+\section*{Formatting}
+\begin{itemize}
+    \item Agree to a formatting standard
+    \begin{itemize}
+        \item Improves readability and maintainability
+        \item Even more important in team environments
+        \item The style survives, the code does not
+    \end{itemize}
+    \item Apply the newspaper metaphor
+    \begin{itemize}
+        \item The name of the class/module should be sufficient to tell if that's the correct source file
+        \item At the top: high level and important information
+        \item At the bottom: details increase
+        \item Most articles (read: source files) are small, some are a bit longer
+    \end{itemize}
+    \item Divide concepts with blank lines
+    \begin{itemize}
+        \item Add blank lines between imports, classes and functions
+    \end{itemize}
+    \item Keep an eye on vertical density
+    \begin{itemize}
+        \item Avoid blank lines between variables that are part of the same concept
+    \end{itemize}
+    \item Keep an eye on vertical distance
+    \begin{itemize}
+        \item Concepts that are closely related should be kept close to each other
+        \item Closely related concepts should not be separated into different files
+        \item Therefore avoid protected variables
+    \end{itemize}
+    \item Declare variables at the right location
+    \begin{itemize}
+        \item Local variables should be declared as close to their usage as possible
+        \item In short functions: at the top
+    \end{itemize}
+    \item Keep dependent functions together
+    \begin{itemize}
+        \item The caller should be above the callee
+    \end{itemize}
+\end{itemize}
