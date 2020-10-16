@@ -1,0 +1,30 @@
+%! Author = elias
+%! Date = 16.10.20
+
+\section*{Classes}
+\begin{itemize}
+    \item Make classes small
+    \begin{itemize}
+        \item One responsibility per class
+        \item Responsibility $=$ "reason to change"
+        \item If it's hard to find a fitting name, the class is too large
+        \item Words like \textit{Processor}, \textit{Manager} or \textit{Super} hint at an aggregation of responsibilities
+        \item It should be possible to create a description of a class in about 25 words
+    \end{itemize}
+    \item Increase cohesion
+    \begin{itemize}
+        \item It means that parts of a class are a logical unit
+        \item Functions operate on multiple instance variables
+        \item When classes lose cohesion, split them (if there is a set of variables only used by a subset of methods)
+    \end{itemize}
+    \item Fix broken classes
+    \begin{itemize}
+        \item Only if something needs to be changed or added
+        \item "In an ideal system, we incorporate new features by extending the system, not by making modifications to existing code."
+    \end{itemize}
+    \item Use interfaces to decouple tight relations
+    \begin{itemize}
+        \item Improves testability, flexibility and understandability
+        \item Dependency Inversion Principle: classes should depend upon abstractions not concrete details
+    \end{itemize}
+\end{itemize}
