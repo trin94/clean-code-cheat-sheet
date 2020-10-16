@@ -1,0 +1,39 @@
+%! Author = elias
+%! Date = 16.10.20
+
+% Preamble
+
+\section*{Unit Tests}
+\begin{itemize}
+    \item Consider following Test Driven Development rules
+    \begin{enumerate}
+        \item "You may not write production code until you have written a failing unit test."
+        \item "You may not write more of a unit test than is sufficient to fail, and not compiling is failing."
+        \item "You may not write more production code than is sufficient to pass the currently failing test."
+    \end{enumerate}
+    \item Keep tests clean
+    \begin{itemize}
+        \item Having dirty tests is equivalent to, if not worse than, having no tests
+        \item Unit tests keep production code flexible, maintainable and reusable
+        \item Tests don't need to be as efficient as production code
+    \end{itemize}
+    \item Use the Build-Operate-Check pattern for each test method
+    \begin{itemize}
+        \item Build up test data and test environment
+        \item Execute the test
+        \item Verify results
+    \end{itemize}
+    \item Keep the number of asserts small
+    \begin{itemize}
+        \item May require building up a testing language (given, when, then)
+        \item Consider testing a single concept per test
+    \end{itemize}
+    \item Follow the F.I.R.S.T principle
+    \begin{itemize}
+        \item Fast: if tests are slow, they will be executed less frequently
+        \item Independent: tests should not depend on each other
+        \item Repeatable: tests should run offline and on every environment
+        \item Self-Validating: tests should be validated by the system (not manually)
+        \item Timely: write tests just before the production code and not after
+    \end{itemize}
+\end{itemize}
