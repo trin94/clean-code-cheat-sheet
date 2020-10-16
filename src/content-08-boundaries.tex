@@ -1,0 +1,20 @@
+%! Author = elias
+%! Date = 16.10.20
+
+\section*{Boundaries}
+\begin{itemize}
+    \item Consider wrapping third-party code
+    \begin{itemize}
+        \item Keeps code separated
+        \item Allows swapping libraries
+        \item First-party: want code that is focused on particular need
+        \item Third-party: want code that strives to broad applicability
+        \item At least do not pass third-party interfaces around
+    \end{itemize}
+    \item Control the boundaries
+    \begin{itemize}
+        \item Interfaces are great for boundaries with third-party or non existing first-party code
+        \item System can be designed without worrying about the "other" code
+        \item Allow only few points of contact with third party code
+    \end{itemize}
+\end{itemize}
