@@ -1,0 +1,22 @@
+%! Author = elias
+%! Date = 15.10.20
+
+\section*{Objects and Structures}
+\begin{itemize}
+    \item Do not create hybrids of objects and structures
+    \begin{itemize}
+        \item Objects hide their internals
+        \item Structures expose their internals
+    \end{itemize}
+    \item Follow the Law of Demeter: method $f$ of class $C$ should only call other functions of
+    \begin{itemize}
+        \item $C$
+        \item An object created by $f$
+        \item An object passed as an argument to $f$
+        \item An object held in an instance variable of $C$
+    \end{itemize}
+    \item Avoid long method call chains
+    \begin{itemize}
+        \item Might violate the Law of Demeter
+    \end{itemize}
+\end{itemize}
