@@ -1,0 +1,34 @@
+%! Author = elias
+%! Date = 15.10.20
+
+\section*{Error Handling}
+\begin{itemize}
+    \item Prefer exceptions over error codes
+    \begin{itemize}
+        \item It results in cleaner code
+        \item It doesn't clutter up application logic with error handling
+    \end{itemize}
+    \item Prefer unchecked exceptions
+    \begin{itemize}
+        \item Breaks encapsulation
+        \item Use checked exceptions on very critical sections
+    \end{itemize}
+    \item Define exception classes in terms of a caller's needs
+    \begin{itemize}
+        \item Better readability
+        \item Allows to combine 'lower level' exceptions
+    \end{itemize}
+    \item Don't use exceptions for handling the normal flow
+    \begin{itemize}
+        \item Follow the special case pattern to get rid of the exception
+    \end{itemize}
+    \item Don't return \textit{null}
+    \begin{itemize}
+        \item Forces null checks which clutter up the code
+        \item Instead throw an exception or return a special case object
+    \end{itemize}
+    \item Don't pass \textit{null}
+    \begin{itemize}
+        \item Less need for defensive programming which results in cleaner code
+    \end{itemize}
+\end{itemize}
