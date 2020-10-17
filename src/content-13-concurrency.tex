@@ -1,0 +1,43 @@
+%! Author = elias
+%! Date = 17.10.20
+
+\section*{Concurrency}
+\begin{itemize}
+    \item Separate concurrency from application logic
+    \begin{itemize}
+        \item Concurrency is complex enough to have its own reason to change
+    \end{itemize}
+    \item Restrict the number of critical sections
+    \begin{itemize}
+        \item Reduced guard code
+        \item Reduced probability of failures and forgotten protections
+    \end{itemize}
+    \item Keep the synchronized sections small
+    \begin{itemize}
+        \item For better performance
+    \end{itemize}
+    \item Consider duplicating objects instead of synchronizing
+    \begin{itemize}
+        \item Costs need to be inspected individually
+    \end{itemize}
+    \item Know your tools
+    \begin{itemize}
+        \item Thread safe data structures
+        \item Common execution models: producer/consumer, readers/writers, dining philosophers
+    \end{itemize}
+    \item Investigate "one-off" errors
+    \begin{itemize}
+        \item There are no one-off errors
+        \item One-off errors point to a faulty system
+    \end{itemize}
+    \item Create nonthreaded code first
+    \begin{itemize}
+        \item This will separate error chasing in threaded and nonthreaded sections as well
+    \end{itemize}
+    \item Test threaded code
+    \begin{itemize}
+        \item Varying conditions: one thread, several threads, more threads than cores
+        \item Multiple times
+        \item On different platforms
+    \end{itemize}
+\end{itemize}
