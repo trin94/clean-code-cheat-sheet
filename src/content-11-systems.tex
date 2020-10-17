@@ -1,0 +1,26 @@
+%! Author = elias
+%! Date = 17.10.20
+
+\section*{Systems}
+\begin{itemize}
+    \item Separate constructing a system from using it
+    \begin{itemize}
+        \item Be careful when using the lazy initialization idiom
+        \item Follow a strategy that separates the startup from runtime
+        \item One way: construct the bigger subsystems in the main function or a module called from the main function
+    \end{itemize}
+    \item Consider using Dependency Injection
+    \begin{itemize}
+        \item Separates construction from use
+        \item Lazy initialization possible
+    \end{itemize}
+    \item Separate concerns
+    \begin{itemize}
+        \item Enables scalable growth
+        \item Keeps the code clean
+    \end{itemize}
+    \item Don't "overengineer"
+    \begin{itemize}
+        \item Use the simplest thing that can possibly work
+    \end{itemize}
+\end{itemize}
