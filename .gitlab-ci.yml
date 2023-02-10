@@ -1,7 +1,0 @@
-compile_pdf:
-  image: aergus/latex
-  script:
-    - ./build.sh
-  artifacts:
-    paths:
-      - main.pdf
